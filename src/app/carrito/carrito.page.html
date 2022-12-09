@@ -1,0 +1,56 @@
+<!-- Comienza el Header -->
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+
+    </ion-title>
+
+  </ion-toolbar>
+</ion-header>
+<!-- Termina el Header -->
+
+<!-- Comienza el Content -->
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">HortalizaApp</ion-title>
+
+    </ion-toolbar>
+  </ion-header>
+  <!-- Comienza un Card -->
+  <ion-card>
+    
+    <!-- Contenido de un Card -->
+    <ion-card-content>
+      <ion-item lines="none">
+        <!-- {{interpolacion}} 
+          Permite mostrar los datos desde el script a la visual
+          verificar el data en el home.page.ts
+        -->
+        <ion-label >Productos seleccionados:</ion-label>
+      </ion-item>
+
+      <div class="centrado">
+
+      <ion-button (click)="Carrito()">ALCACHOFAS</ion-button><ion-label >$1.000</ion-label>
+      <br>
+      <ion-button (click)="lista()">PAPAS</ion-button><ion-label >$2.000</ion-label>  
+      <br>
+      <ion-button (click)="ubicacion()">LIMONES</ion-button><ion-label >$500</ion-label>
+      <br>
+      <ion-button (click)="cierra()">TOMATES</ion-button><ion-label >$1.000</ion-label>
+      <br>
+      <div class="centrado">
+      <ion-label >TOTAL: $4.500</ion-label>
+    </div>
+    <ion-button (click)="cierra()">Volver</ion-button>
+
+    </ion-card-content>
+
+    <!-- Contenido de un Card -->
+  </ion-card>
+  <!-- Termina un Card -->
+
+
+</ion-content>
+<!-- Termina el Content -->

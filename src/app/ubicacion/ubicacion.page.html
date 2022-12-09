@@ -1,0 +1,50 @@
+<!-- Comienza el Header -->
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <h1>Fast Pass</h1>
+  </ion-toolbar>
+</ion-header>
+<!-- Termina el Header -->
+
+<!-- Comienza el Content -->
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+    </ion-toolbar>
+  </ion-header>
+  <!-- Comienza un Card -->
+  <ion-card>
+    
+    <!-- Contenido de un Card -->
+    <ion-card-content>
+      <ion-item lines="none">
+        
+        <div class="mapa">
+        <ion-img src="https://img.freepik.com/vector-premium/mapa-punto-ubicacion-destino_34645-957.jpg?w=2000"></ion-img>
+        </div>
+  
+      </ion-item>
+      <ion-item lines="full">
+        <ion-label position="floating">Ingresa Tu Ubicacion:</ion-label>
+        <!-- Usamos ngModel para indicarle al input el objeto a utilizar-->
+        <ion-input type="text" [(ngModel)]="ubicacion.usuario"></ion-input>
+      </ion-item>
+    </ion-card-content>
+
+    <div class="centrado">
+
+      <ion-button (click)="ingresar()">Continuar</ion-button>
+      <ion-button (click)="cierra()">Cerrar sesión</ion-button>
+  
+    </div>
+
+    <!-- Contenido de un Card -->
+  </ion-card>
+  <!-- Termina un Card -->
+
+</ion-content>
+<!-- Termina el Content -->
+<ion-footer>
+
+ 
+</ion-footer>

@@ -1,0 +1,50 @@
+<!-- Comienza el Header -->
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title  class="titulo" size="large">FAST PASS </ion-title>
+  </ion-toolbar>
+</ion-header>
+<!-- Termina el Header -->
+
+<!-- Comienza el Content -->
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title></ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <!-- Comienza un Card -->
+  <ion-card>
+    
+    <!-- Contenido de un Card -->
+    <ion-card-content>
+      <ion-item lines="none">
+        <!-- {{interpolacion}} 
+          Permite mostrar los datos desde el script a la visual
+          verificar el data en el home.page.ts
+        -->
+        <ion-label >¡Hola {{data.usuario}}!<br>¿Qué deseas hacer?</ion-label>
+      </ion-item>
+
+      <div class="centrado">
+
+      <ion-button (click)="carrito()">Ver carrito</ion-button>
+      <br>
+      <ion-button (click)="lista()">Productos</ion-button>  
+      <br>
+      <ion-button (click)="ubicacion()">Estado pedido</ion-button>
+      <br>
+      <ion-button (click)="cierra()">Cerrar sesión</ion-button>
+
+    </div>
+
+    </ion-card-content>
+
+    <!-- Contenido de un Card -->
+  </ion-card>
+  <!-- Termina un Card -->
+
+  <img src="https://factoryfy.es/wp-content/uploads/dise%C3%B1o-logotipo-comida-app.jpg">
+</ion-content>
+<!-- Termina el Content -->
+
